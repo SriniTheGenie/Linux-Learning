@@ -1,0 +1,12 @@
+Course 2 - Week 1 - 27th Jan 2022
+Kernel vs Operating System
+  Kernel
+  OS - System Libraries (libc - communication between application and kernel)
+  System Libraries (Shared Libraries and Dynamically Loaded Libraries)
+  System Services (Daemons -> Eg: when printing)
+  
+  X Windows
+  Windows Manager
+  Desktop Manager (Gnome and KDE)
+  
+  Shell -> Bash -> BourneAgain Shell
