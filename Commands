@@ -1,3 +1,3 @@
-sudo - Super User Do
+sudo - Substitute User Do
 su - super user
 sudo passwd root (in ubuntu let us set password for root)
