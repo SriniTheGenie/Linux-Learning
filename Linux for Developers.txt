@@ -10,3 +10,4 @@ Kernel vs Operating System
   Desktop Manager (Gnome and KDE)
   
   Shell -> Bash -> BourneAgain Shell
+  System Utilities
