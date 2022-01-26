@@ -1,3 +1,4 @@
 sudo - Super user do!
 su - super user
 sudo passwd root (in ubuntu let us set password for root)
+PATH=$PATH:/usr/sbin:/sbin  (Setting path variable to look for executables)
