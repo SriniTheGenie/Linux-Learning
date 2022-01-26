@@ -2,3 +2,5 @@ sudo - Super user do!
 su - super user
 sudo passwd root (in ubuntu let us set password for root)
 PATH=$PATH:/usr/sbin:/sbin  (Setting path variable to look for executables)
+The tilde (~) is a Linux "shortcut" to denote a user's home directory. Thus tilde slash (~/) is the beginning of a path to a file or directory below the user's home directory. 
+For example, for user01, file /home/user01/test. file can also be denoted by ~/test.
