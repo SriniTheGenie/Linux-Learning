@@ -1,0 +1,51 @@
+info
+info is a simple-to-use documentation system, hypertextual in nature, although it does not require a graphical browser. The documentation is built using the Texinfo system, which is a reader you need know nothing about.
+
+You may have noticed that many man pages say you can get more detailed information by running info on the command, such as in:
+
+1
+$ info ls
+This pops you into a documentation page, which you can page through by hitting the space bar. Other key bindings are:
+
+Key
+
+Function
+
+n
+
+Go to next node
+
+p
+
+Go to previous node
+
+u
+
+Go to upper node
+
+l
+
+Go to last visited node
+
+space or PageDown
+
+Go to next page
+
+delete\verb or backspace or PageUp
+
+Go to previous page
+
+/ or CTL-s
+
+Search for the string prompted for
+
+i
+
+Search for a node containing the string prompted for
+
+You will notice we distinguish between nodes and pages. The info page is a hierarchical tree of nodes, each of which may have multiple pages, or screenfuls.
+
+
+Lines which begin with an asterisk (*) are nodes which you can jump to by moving to that line (with the arrow keys for example) and then hitting return.
+
+info is easier to use than it is to describe. It often contains more exhaustive information than the man page, but  sometimes it just regurgitates it.
