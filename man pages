@@ -1,1 +1,79 @@
+man Pages
+man is the workhorse of Linux documentation, as it has been on all UNIX-like operating systems since their inception. Its name is short for manual. In fact, the first edition of the UNIX Programmer’s Manual was released in 1971 and was probably the first case of online documentation.
+
+It is most often invoked from the command line in a terminal window. For a random example (with a short man page!):
+
+
+The above screenshot displays the most common standard sections: NAME, SYNOPSIS, DESCRIPTION, OPTIONS, SEE ALSO, and BUGS. Other sections that might appear include: RETURN VALUE, ERRORS, CONFORMING TO, RESTRICTIONS, AUTHOR, COPYRIGHT, REPORTING BUGS, and EXAMPLES.
+
+When you invoke man at a terminal window, it will automatically pipe its output into your pager, which on most Linux systems is less; on older systems, it may be more. You can change this by altering the value of the PAGER environment variable.
+
+You will notice that man pages are referenced by chapter number, e.g. gzip(1) is in the first chapter. What chapter a given man page belongs in depends on its subject:
+
+Chapter
+
+Description
+
+1
+
+User commands (standard commands)
+
+2
+
+System calls
+
+3
+
+Subroutines (library functions)
+
+4
+
+Devices
+
+5
+
+File formats, and files used by a program
+
+6
+
+Games
+
+7
+
+Miscellaneous
+
+8
+
+System administration
+
+9
+
+Kernel documentation
+
+n
+
+New, mainly used by Tcl/Tk
+
+In addition, there are sometimes chapters with a p or x suffix, such as 1p, or 3x, where the p stands for the POSIX standard specifications, and x stands for X Window System documentation. Other subsections may be present as well on your system.
+
+One complication is that many keywords can have more than one man page. For instance, socket has at least two different man pages, in chapters 2 and 7. You can look at any one of them by specifying the particular chapter, as in:
+
+1
+$ man 7 socket
+or you can see all of them in sequence by doing:
+
+1
+$ man -a socket
+man has a lot of options (do man man), some of which have utility short hand forms. For example, by doing either of these commands:
+
+12
+$ whatis socket
+$ man -f socket
+you will get a list of all man pages that have socket in their name. Likewise, if you do either of the commands:
+
+12
+$ apropos socket
+$ man -k socket
+you will get a list of all man pages that discuss sockets, whether or not it is in their name.
+
 
