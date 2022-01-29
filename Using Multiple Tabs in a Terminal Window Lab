@@ -1,0 +1,16 @@
+Using Multiple Tabs in a Terminal Window (Lab)
+Open up a terminal window. For GNOME, you can do this by one of three methods:
+
+Find the terminal application in the Application menu system, either under Accessories or System Tools.
+
+Hit Alt-F2 to bring up the Run Command window and type in gnome-terminal.
+
+Right-click anywhere on the desktop and select Open Terminal (this may or may not work depending on your Linux distribution and version).
+
+Right-clicking anywhere in the terminal window will open either a new terminal or a new tab. On older versions, you can select either. On newer GNOME versions, you have to select which one you want to be offered by clicking on Edit  > Preferences and then choose either Window or Tab under the dialog for Open new terminals in. Why this is considered an improvement is not clear. Or you can hit Shift  > Ctl-T.
+
+If you open multiple tabs, you can switch between them either with the mouse or by hitting Alt-1, Alt-2, etc.
+
+While you are at it, it would be a good time to learn how to configure the profile or create a new one, changing fonts, colors, etc.
+
+For KDE, the konsole program can be used in much the same way, with new windows being launched with Ctl-Shift-M and new tabs with Ctl-Shift-N.
