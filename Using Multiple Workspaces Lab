@@ -1,0 +1,17 @@
+Using Multiple Workspaces (Lab)
+The most common Desktop Managers in use in Linux have the capability of using multiple workspaces or desktops simultaneously.
+
+This is not the same as using multiple monitors, for which Linux has mature functionality.
+
+On recent GNOME desktops, you should see the workspace widget in the lower right corner. You can configure properties such as how many alternative desktops are available by running gnome-tweak-tool (or gnome-tweaks) which you can install if it is not already present in your system.
+
+On older GNOME desktops, you can add an applet for this to your task bar (if it is not already there) by right-clicking on an empty area of the task bar, and selecting Add to Panel, and then scroll down and select Workspace Switcher. If you right click on the applet, you can also configure the number of workspaces and how they are arranged in rows and columns, and some other properties.
+
+You can then switch to a different workspace by clicking on the applet in the appropriate space, or hitting Ctl-Alt-arrow, where arrow can be the left, right, up or down arrow.
+
+How you can move a running application to a different workspace depends on the GNOME version you are running. Right-clicking on the title bar and following suggestions may work. Or you can hit the Windows key and drag the window you want to the desktop you want, which will be seen on the right hand side of the screen.
+
+Note you can also choose to have the application show on all workspaces.
+
+If you are running a KDE desktop, the relevant applet is called the Pager, and the alternate screens are called desktops, not workspaces. It is similarly easy to add the applet and configure it, and to move applications among desktops.
+
