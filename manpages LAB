@@ -1,0 +1,39 @@
+Multiple man Pages (Lab)
+Often, there are multiple man pages (in different chapters of the manual) for a given topic. As an example, we will give stat.
+
+If you just do:
+
+1234567891011121314
+$ man stat
+STAT(1)                          User Commands                        STAT(1)
+
+NAME
+      stat - display file or file system status
+
+SYNOPSIS
+      stat [OPTION] FILE...
+
+DESCRIPTION
+
+you will get a description of the command line utility.
+
+Try doing:
+
+1
+$ man -k stat
+which is equivalent to doing apropos stat. You will get a long list of man pages that reference the string stat.
+
+ To narrow the list down to pages that are an exact match, do:
+
+1
+$ man -f stat
+and then you can get the page from chapter two by doing:
+
+1
+$ man 2 stat
+If you want to see all the pages, you can do:
+
+1
+$ man -a stat
+and then you can see each of the relevant chapters in turn, typing q after each one is displayed to proceed the next one.
+
