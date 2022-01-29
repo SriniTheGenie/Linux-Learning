@@ -1,0 +1,24 @@
+--help and help
+Many of the commands on your system will generate a brief discussion of usage and options if you run them with the --help option. For example, trying this with rm by doing rm --help gives the output seen in the screenshot below.
+
+
+This is often all you need and can be consumed much quicker than running man or info.
+
+There is also a help command, which is actually part of the bash shell, and only gives information about commands which are actually part of the shell itself. Typing help by itself generates the screenshot shown below,
+
+
+and information on a particular command can be done as in: 
+
+123456
+$ help pwd
+
+pwd: pwd [-LP]
+    Print the current working directory.  With the -P option, pwd prints
+    the physical directory, without any symbolic links; the -L option
+    makes pwd follow symbolic links.
+It is important to note that there are programs which have two incarnations, one in the bash shell and one as a standalone program. For example, these two commands are similar but not identical:
+
+12
+$ echo hello
+$ /bin/echo hello
+By default, the command built into the shell is invoked, rather than the one in the path. Likewise, the results of man echo and help echo are not the same. This can be confusing.
