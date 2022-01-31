@@ -1,0 +1,10 @@
+Using info (Lab)
+Enter the info help system for gcc by doing:
+
+1
+$ info gcc
+If you type ? (or H, depending on the info version), a screen will be brought up detailing the various key bindings and commands you can type.
+
+For example, suppose you want to examine optimization levels that can be invoked. You can search forward either by hitting / or s and typing in the string optimization.
+
+Navigate around to different levels, search for other items and familiarize yourself with the info system.
