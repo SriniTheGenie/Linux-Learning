@@ -1,0 +1,27 @@
+Environment Variables
+Environment variables are not limited in length or number. Lots of applications use them, for instance, in order to set default values for configuration options.
+
+Examples include HOME, HOST, PATH, and can be set as in PATH: PATH=$HOME/bin:$PATH for example.
+
+Note: Putting ./ in your path is a security risk; an unfriendly user might substitute an executable which could be quite harmful. However, if you are on a single user system, you may want to violate this recommendation.
+
+Type env (or export) to get a list of presently exported environment variables, set to get the complete set of variables.
+
+Some variables to set (use whatever values make sense for you!):
+
+123456
+EDITOR=/usr/bin/emacs
+CD_PATH=$HOME:/tmp
+LS_COLORS="......"
+PAGER=/usr/bin/less
+HISTSIZE=1000
+
+An environment variable must be exported to propagate its value to a child process. You can do either of the following:
+
+12
+$ VAR=value ; export VAR
+$ export VAR=value
+You can also make one or more environment variables take effect for just one command:
+
+1
+$ LD_LIBRARY_PATH=$PWD DEBUG=3 ./foobar
