@@ -1,0 +1,3 @@
+Aliases permits custom definitions. Typing alias with no arguments gives the list of defined aliases. unalias gets rid of an alias.
+
+Some alias examples are shown below:
