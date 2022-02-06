@@ -1,0 +1,84 @@
+Customizing the Command Line Prompt
+The default command line prompt is $ for normal users and # for the root or superuser.
+
+Customizing the command line prompt is as simple as modifying the value of the environment variable PS1. For example, to set it to display the hostname, user and current directory:
+
+12
+$ PS1="\h:\u:\w>"
+c7:coop:/tmp>
+Besides the aesthetic value of having a prettier prompt than the default value, embedding more information in the prompt can be quite useful. In the example given we have shown:
+
+The machine name - this is useful if you run command line windows on remote machines from your desktop; you can always tell where you are, and this can avoid many errors.
+
+The user name - this is particularly important if you are running as a superuser (root) and can help you avoid errors where you take what you think is a benign action and wind up crippling your system.
+
+The current directory - it is always important to know where you are. You certainly do not want to do something like rm * in the wrong directory.
+
+Here is a table with some of the possible special characters that can be embedded in the PS1 string:
+
+Character
+
+Meaning
+
+Example Output
+
+\t
+
+Time in HH:MM:SS
+
+08:43:40
+
+\d
+
+Date in ”Weekday Month Date”
+
+Fri Mar 12
+
+\n
+
+Newline
+
+\s
+
+Shell name
+
+bash
+
+\w
+
+Current working directory
+
+/usr/local/bin
+
+\W
+
+Basename of current working directory
+
+bin
+
+\u
+
+User
+
+coop
+
+\h
+
+Hostname
+
+c7
+
+\#
+
+Command number (this session)
+
+43
+
+\!
+
+History number (in history file)
+
+1057
+
+Note you can embed any other string you like in the prompt.
+
